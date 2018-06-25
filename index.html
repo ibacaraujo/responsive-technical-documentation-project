@@ -9,13 +9,40 @@
   	<section class="main-section" id="Getting_Started">
   	  <header>Getting Started</header>
   	  <p>There are two main ways to get TensorFlow.js in your JavaScript project: via script tags or by installing it from NPM and using a build tool like Parcel, WebPack, or Rollup.</p>
+
+      <h2>via Script Tag</h2>
+      <code>
+        &lt;script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.11.7"&gt; &lt;/script&gt;
+      </code>
+
+      <h2>via NPM</h2>
+      <p>Instal TensorFlow.js using npm and import the main js file:</p>
+      <code>
+        import * as tf from '@tensorflow/tfjs';
+      </code>  
   	  <p>See the tutorials, examples and documentation for more details.</p>
   	</section>
   	<section class="main-section" id="Tutorials_&_Guides">
   	  <header>Tutorials & Guides</header>
   	  <p>Tutorials are about core concepts, training first steps.</p>
   	  <p>Guides explain the similarities between the Layers API do TensorFlow.js and Keras.</p>
-  	  <p></p>
+  	  <h2>Examples of code snippets</h2>
+      <p>Define a model for linear regression<p>
+      <code>
+        const model = tf.sequential();
+        model.add(tf.layers.dense({units: 1, inputShape: [1]}));
+      </code>
+      <p>Prepare the model for training: Specify the loss and the optimizer</p>
+      <code>
+        model.compile({loss: 'meanSquaredError', optimizer: 'sgd'});
+      </code>
+      <p>Train the model using some synthetic data</p>
+      <code>
+        model.fit(xs, ys, {epochs: 10}).then(() => {
+        // Use the model to do inference on a data point the model hasn't seen before:
+        // Open the browser devtools to see the output
+        model.predict(tf.tensor2d([5], [1, 1])).print();
+      </code>
   	</section>
   	<section class="main-section" id="API_Reference">
   	  <header>API Reference</header>
