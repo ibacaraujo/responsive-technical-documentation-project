@@ -2,7 +2,11 @@
   font-size: 25px;
 }
 
+header {
+  font-size: 25px;
+}
+
 #navbar {
   display: flex;
-  flex-direction: column;	
+  flex-direction: column;
 }
