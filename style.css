@@ -14,6 +14,10 @@ header {
   font-size: 25px;
 }
 
+.main-section header {
+	font-size: 20px;
+}
+
 h2 {
 	font-size: 20px;
 }
