@@ -8,10 +8,12 @@
 
 #title {
   font-size: 25px;
+  font-family: 'Slabo 27px', serif;
 }
 
 header {
   font-size: 35px;
+  font-family: 'Slabo 27px', serif;
 }
 
 .main-section header {
