@@ -19,12 +19,11 @@ header {
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 25px;
 }
 
 #navbar {
   display: flex;
   flex-direction: column;
   position: fixed;
-  float: left;
 }
