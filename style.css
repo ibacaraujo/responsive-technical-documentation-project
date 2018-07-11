@@ -38,3 +38,8 @@ p {
 #main-doc {
   padding-left: 315px;
 }
+
+#navbar a {
+  font-size: 25px;
+  font-family: 'Slabo 27px', serif;
+}
