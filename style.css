@@ -43,3 +43,9 @@ p {
   font-size: 25px;
   font-family: 'Slabo 27px', serif;
 }
+
+@media screen and (max-width: 800px) {
+  #navbar {
+    background-color: lightblue;
+  }
+}
